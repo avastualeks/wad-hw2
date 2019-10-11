@@ -16,7 +16,7 @@
     <section id="container">
         <section id="main">
             <div class="content">
-                <div id="profile-container" class="tab active">
+                <div id="profile-container" class="tab">
                     <div id="profile">
                         <div class="avatar">
                             <img src="res/images/me.png" id="picture" alt="My picture">
@@ -34,42 +34,42 @@
                         <div class="clear-fix"></div>
                     </div>
                 </div>
-                <div id="courses-container" class="tab">
+                <div id="courses-container" class="tab active">
                     <h1 class="title">Courses</h1>
                     <table id="courses">
                         <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Course Title</th>
-                            <th>Semester</th>
-                            <th>Grade</th>
-                        </tr>
+                            <tr>
+                                <th>#</th>
+                                <th>Course Title</th>
+                                <th>Semester</th>
+                                <th>Grade</th>
+                            </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Agile software development</td>
-                            <td>1</td>
-                            <td>82</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>System modeling</td>
-                            <td>1</td>
-                            <td>85</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Object-oriented programming</td>
-                            <td>2</td>
-                            <td>99</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Estonian language Level A2</td>
-                            <td>2</td>
-                            <td>65</td>
-                        </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Agile software development</td>
+                                <td>1</td>
+                                <td>82</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>System modeling</td>
+                                <td>1</td>
+                                <td>85</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Object-oriented programming</td>
+                                <td>2</td>
+                                <td>99</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Estonian language Level A2</td>
+                                <td>2</td>
+                                <td>65</td>
+                            </tr>
                         </tbody>
                     </table>
                     <br>
@@ -87,8 +87,8 @@
                 </div>
             </div>
             <div class="controls">
-                <button id="profile-button" class="pill active">Profile</button>
-                <button id="courses-button" class="pill">Courses</button>
+                <button id="profile-button" class="pill">Profile</button>
+                <button id="courses-button" class="pill active">Courses</button>
             </div>
         </section>
     </section>
@@ -103,6 +103,9 @@
         </ul>
     </footer>
 </main>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
+<script src="res/js/app.js"></script>
 </body>
 </html>
