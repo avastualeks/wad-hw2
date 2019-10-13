@@ -123,7 +123,7 @@ $(document).ready(() => {
     }
 
     function adjustGPA(gpa) {
-        $('#gpa').html(`<strong>${gpa}</strong>`);
+        $('#gpa strong').html(gpa);
     }
 
     function clearForm() {
