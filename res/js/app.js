@@ -58,29 +58,12 @@ $(document).ready(() => {
         tableIndex++;
     };
 
-    // tab switching
-    $('#profile-button').on('click', e => {
-        const $profileB = $('#profile-button');
+    $('#profile-button, #courses-button').on('click', e => {
+        $('#profile-container').toggleClass('active');
+        $('#courses-container').toggleClass('active');
 
-        if (!$profileB.hasClass('active')) {
-            $profileB.addClass('active');
-            $('#courses-button').removeClass('active');
-
-            $('#profile-container').addClass('active');
-            $('#courses-container').removeClass('active');
-        }
-    });
-
-    $('#courses-button').on('click', e => {
-        const $coursesB = $('#courses-button');
-
-        if (!$coursesB.hasClass('active')) {
-            $coursesB.addClass('active');
-            $('#profile-button').removeClass('active');
-
-            $('#courses-container').addClass('active');
-            $('#profile-container').removeClass('active');
-        }
+        $('#profile-button').toggleClass('active');
+        $('#courses-button').toggleClass('active');
     });
 
     $('#add-course-button').on('click', e => {
