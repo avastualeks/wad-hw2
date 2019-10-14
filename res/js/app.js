@@ -58,12 +58,15 @@ $(document).ready(() => {
         tableIndex++;
     };
 
-    $('#profile-button, #courses-button').on('click', e => {
-        $('#profile-container').toggleClass('active');
-        $('#courses-container').toggleClass('active');
+    // tab switching
+    $('#profile-button').on('click', () => {
+        $('#profile-container, #profile-button').addClass('active');
+        $('#courses-container, #courses-button').removeClass('active');
+    });
 
-        $('#profile-button').toggleClass('active');
-        $('#courses-button').toggleClass('active');
+    $('#courses-button').on('click', () => {
+        $('#profile-container, #profile-button').removeClass('active');
+        $('#courses-container, #courses-button').addClass('active');
     });
 
     $('#add-course-button').on('click', e => {
